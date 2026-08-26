@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Noto Serif SC", "Noto Sans SC", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: #090b0e;
+  --color-bg-elevated: #12151a;
+  --color-surface: #171b22;
+  --color-surface-2: #1e232c;
+  --color-fg: #eceff3;
+  --color-muted: #8b939e;
+  --color-subtle: #6b7380;
+  --color-border: #2a303a;
+  --color-border-strong: #3a4250;
+  --color-accent: #c5ced8;
+  --color-accent-fg: #090b0e;
+  --color-steel: #9eb0c2;
+  --color-up: #d64b4b;
+  --color-down: #2e9a72;
+  --color-warn: #c4924a;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  --shadow-panel: 0 18px 40px -28px rgb(0 0 0 / 0.7);
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--color-steel) 40%, transparent);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

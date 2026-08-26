@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "衡砚研究",
+      "hasCanvas": false,
+      "bodyTextLen": 2287,
+      "bodyTextHash": "746a1eb1ea25c3e7c3b00431c0df49467542c58e3acdd7162769ff77c4819be6",
+      "bodyTextPrefix": "衡砚 研究台 总览 行情 日评分 月度池 年度池 新闻 规划 自选 方法 研究快照 上证指数 — — 深证成指 — — 创业板指",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "衡砚研究",
+      "hasCanvas": false,
+      "bodyTextLen": 2333,
+      "bodyTextHash": "a0cad636f2b682e312bec06c46b919ff7f275f5fed3c49f0eb70ce4db1ed72a9",
+      "bodyTextPrefix": "衡砚 公开快照 上证指数 3912.52 +0.59% 深证成指 13841.33 +0.69% 创业板指 3414.88 +0",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
